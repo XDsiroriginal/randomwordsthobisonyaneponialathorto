@@ -58,13 +58,13 @@
             const particles = [];
 
             function createParticles(x, y) {
-                const particleCount = 1000;
+                const particleCount = 500;
                 const angleIncrement = (Math.PI * 2) / particleCount;
                 
                 for (let i = 0; i < particleCount; i++) {
                     const angle = angleIncrement * i;
-                    const speed = 5 + Math.random() * 7;
-                    const radius = 3 + Math.random() * 5;
+                    const speed = 4 + Math.random() * 6;
+                    const radius = 2 + Math.random() * 4;
                     const hue = Math.floor(Math.random() * 360);
                     
                     particles.push({
@@ -135,7 +135,7 @@
                         const heartX = heartRect.left + heartRect.width / 2;
                         const heartY = heartRect.top + heartRect.height / 2;
                         
-                        for (let i = 0; i < 10; i++) {
+                        for (let i = 0; i < 5; i++) {
                             setTimeout(() => {
                                 const x = heartX + (Math.random() - 0.5) * 200;
                                 const y = heartY + (Math.random() - 0.5) * 200;
